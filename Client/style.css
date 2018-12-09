@@ -13,17 +13,19 @@
     /*left: 300px;*/
 }
 
-
-#logoContainer img {
+#team1logo {
+    width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#logoContainer{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+
+#team2logo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .teamNameDisplay {
