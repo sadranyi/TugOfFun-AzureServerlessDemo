@@ -29,8 +29,8 @@ var setGameArea = function() {
 $("#btnLetsPlay").click(function(){
     
     // set team names
-    Team1Name = $("#nameTeam1").val();
-    Team2Name = $("#nameTeam2").val();
+    Team1Name = $("#nameTeam1").val() || Team1Name;
+    Team2Name = $("#nameTeam2").val() || Team2Name;
 
     // display team names
     $("#team1Display").text(Team1Name);
