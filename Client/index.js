@@ -33,8 +33,14 @@ $("#btnLetsPlay").click(function(){
     Team2Name = $("#nameTeam2").val() || Team2Name;
 
     // display team names
-    $("#team1Display").text(Team1Name);
-    $("#team2Display").text(Team2Name);
+    $("#team1Display span#team1Displaytext").text(Team1Name);
+    $("#team1Display span#team2Displaytext").text(Team2Name);
+
+    $("#team1Display span#team1badge").text(Team1Score);
+    $("#team1Display span#team2badge").text(Team2Score);
+
+    //$("#team1Display").text(Team1Name);
+    //$("#team2Display").text(Team2Name);
 
     // create the teams in the db
     setupTeams();
