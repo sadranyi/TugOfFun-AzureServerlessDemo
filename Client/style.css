@@ -13,7 +13,7 @@
     /*left: 300px;*/
 }
 
-#team1logo #team2logo {
+#team1logo, #team2logo {
  width: 100px;
  position: absolute;
 }
