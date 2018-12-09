@@ -6,8 +6,8 @@ $( document ).ready(function() {
 
 var gameAreaWidth = 0;
 
-var Team1Name = "Team1";
-var Team2Name = "Team2"; 
+var Team1Name = "Ducks";
+var Team2Name = "Beavers"; 
 
 var Team1Id;
 var Team2Id;               
@@ -22,7 +22,7 @@ var setGameArea = function() {
 
     gameAreaWidth = $("#gameArea").width();    
     var playerPadding = (gameAreaWidth - 100) / 2;
-    $("#logo").css("left",playerPadding); 
+    $("#ball").css("left",playerPadding); 
 
 };
 
@@ -118,8 +118,8 @@ var getScore = function(teamData,teamNum) {
 };
 
 var refreshScore = function(score1, score2) {
-    $("#team1").text(score1);
-    $("#team2").text(score2);
+    $("#team1badge").text(score1);
+    $("#team2badge").text(score2);
 };
 
 var moveLogo = function(score1, score2) {
@@ -130,18 +130,18 @@ var moveLogo = function(score1, score2) {
     console.log("Moving: " + toMove);
         
     // move logo based on scores
-    $("#logo").css({
-        left: $("#logo").position().left - toMove + "px"
+    $("#ball").css({
+        left: $("#ball").position().left - toMove + "px"
     });                  
 
-    // $("#logo").animate({left: "-=" + toMove + "px"}, 500);
+    // $("#ball").animate({left: "-=" + toMove + "px"}, 500);
 
 };
 
 var isWinningTeam = function() {
 
     // get current position
-    var iPos = parseInt($("#logo").css("left").replace("px",""));
+    var iPos = parseInt($("#ball").css("left").replace("px",""));
     
     // $("#debugPanel").text(iPos);
 
